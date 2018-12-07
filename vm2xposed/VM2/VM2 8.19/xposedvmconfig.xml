@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+	<package name="com.letv.android.client">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewMobile">
+			<method name="start" alias="start">
+			</method>
+			<method name="release" alias="release">
+				<param>boolean</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewMobile$9">
+			<method name="onInfo" alias="onInfo">
+				<param>MediaPlayer</param>
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewH264m3u8">
+			<method name="start" alias="start">
+			</method>
+			<method name="release" alias="release">
+				<param>boolean</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewH264m3u8$16">
+			<method name="onInfo" alias="onInfo">
+				<param>MediaPlayer</param>
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewH264m3u8Hw">
+			<method name="start" alias="start"></method>
+			<method name="release" alias="release">
+				<param>boolean</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewH264m3u8Hw$9">
+			<method name="onInfo" alias="onInfo">
+				<param>MediaPlayer</param>
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewH264mp4">
+			<method name="start" alias="start"></method>
+			<method name="release" alias="release">
+				<param>boolean</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewH264mp4$7">
+			<method name="onInfo" alias="onInfo">
+				<param>MediaPlayer</param>
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+
+		<className name="com.novaplayer.videoview.VideoViewTV">
+			<method name="start" alias="start"></method>
+			<method name="release" alias="release">
+				<param>boolean</param>
+			</method>
+		</className>
+		<className name="com.novaplayer.videoview.VideoViewTV$3">
+			<method name="onInfo" alias="onInfo">
+				<param>MediaPlayer</param>
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.pplive.androidphone">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="android.pplive.media.player.MediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+		</className>
+		<className name="com.pplive.player.BaseVideoView">
+			<method name="setBuffering" alias="setBuffering">
+				<param>boolean</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.qiyi.video">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.mcto.player.mctoplayer.PumaPlayer">
+			<method name="OnStart" alias="Start">
+			</method>
+			<method name="Release" alias="Stop">
+			</method>
+			<method name="OnPlayerStateChanged" alias="OnPlayerStateChanged">
+				<param>int</param>
+			</method>
+			<method name="OnWaiting" alias="OnWaiting">
+				<param>boolean</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="org.fungo.fungolive">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.ksyun.media.player.KSYMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="release" alias="release"></method>
+			<method name="postEventFromNative" alias="postEventFromNative">
+				<param>Object</param>
+				<param>int</param>
+				<param>int</param>
+				<param>int</param>
+				<param>Object</param>
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="stop" alias="stop"></method>
+			<method name="pause" alias="pause"></method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.SimpleMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.huajiao">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.qihoo.livecloud.LiveCloudPlayer">
+			<method name="start" alias="start">
+				<param>int</param>
+			</method>
+			<method name="stop" alias="stop">
+				<param>int</param>
+			</method>
+			<method name="onPlayerMsg" alias="onPlayerMsg">
+				<param>int</param>
+				<param>int</param>
+				<param>long</param>
+				<param>long</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.meelive.ingkee">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.meelive.meelivevideo.VideoPlayer">
+			<method name="start" alias="start"></method>
+			<method name="release" alias="release"></method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.cmcc.migutvtwo">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.miguplayer.player.MGMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="b" alias="b">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.cmcc.cmvideo">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.miguplayer.player.MGMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="b" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.cmvideo.migumovie">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.miguplayer.player.MGMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="b" alias="b">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.cmcc.mobilevideo">
+		<className name="com.miguplayer.player.MGMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.miguplayerdemo">
+		<className name="com.miguplayer.player.MGMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="b" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.youku.phone">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.youku.uplayer.UMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="postEventFromNative" alias="postEventFromNative">
+				<param>Object</param>
+				<param>int</param>
+				<param>int</param>
+				<param>int</param>
+				<param>Object</param>
+			</method>
+		</className>
+		<className name="com.youku.uplayer.AliMediaPlayer">
+			<method name="start" alias="alias"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="postEventFromNative" alias="postEventFromNative">
+				<param>Object</param>
+				<param>int</param>
+				<param>int</param>
+				<param>int</param>
+				<param>Object</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.tencent.qqlive">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.tencent.qqlive.mediaplayer.playernative.PlayerNative">
+			<method name="onEvent" alias="onEvent">
+				<param>Object</param>
+				<param>int</param>
+				<param>int</param>
+				<param>byte[]</param>
+				<param>long</param>
+				<param>long</param>
+			</method>
+		</className>
+
+		<className name="com.tencent.qqlive.mediaplayer.playernative.PlayerNativeWrapper">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+
+			</method>
+			<method name="stop" alias="stop">
+
+			</method>
+			<method name="resume" alias="resume">
+
+			</method>
+		</className>
+	</package>
+
+	<package name="com.sohu.sohuvideo">
+		<className name="com.sohu.player.SohuMediaPlayer">
+			<method name="play" alias="play"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="stop" alias="stop"></method>
+			<method name="handleMessage" alias="handleMessage">
+				<param>Message</param>
+			</method>
+		</className>
+		<className name="com.sohu.sohuvideo.ui.br">
+			<method name="onBufferingStart" alias="onBufferingStart"></method>
+			<method name="onBufferingUpdate" alias="onBufferingUpdate">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="cn.cntv">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="stop" alias="stop"></method>
+			<method name="release" alias="release"></method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="dopool.player">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+			<method name="release" alias="release">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+		<className name="com.starschina.abs.media.AbsractPlayerView">
+			<method name="onInfo" alias="onInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+		<!--<className name="com.starschina.play.view.PlayerView">-->
+		<!--<method name="getCurrentPosition" alias="getCurrentPosition"></method>-->
+		<!--</className>-->
+		<!--<className name="com.starschina.play.controller.BaseControllerView">-->
+		<!--<method name="getCurrentPosition" alias="getCurrentPoasition"></method>-->
+		<!--<method name="getDuration" alias="getDuration"></method>-->
+		<!--<method name="f" alias="play"></method>-->
+		<!--<method name="g" alias="pausing"></method>-->
+		<!--<method name="h" alias="isPlaying"></method>-->
+		<!--</className>-->
+	</package>
+	<package name="com.hunantv.imgo.activity">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.hunantv.media.player.MgtvMediaPlayer">
+
+			<method name="start" alias="mgtvstart">
+			</method>
+			<method name="onBufferStart" alias="mgtvonBufferStart">
+				<param>String</param>
+			</method>
+
+			<method name="onBufferEnd" alias="mgtvonBufferEnd">
+				<param>String</param>
+			</method>
+
+			<method name="pause" alias="mgtvpause"></method>
+			<method name="stop" alias="mgtvstop"></method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.storm.smart">
+		<className name="com.storm.smart.core.PlayerCore">
+			<method name="Play" alias="Play"></method>
+			<method name="Stop" alias="Stop"></method>
+		</className>
+		<className name="com.storm.smart.play.stormplayer.a">
+			<method name="b" alias="b">
+				<param>int</param>
+				<param>Object</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.tudou.android">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.youku.uplayer.UMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+		</className>
+	</package>
+
+	<package name="com.duowan.mobile">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="org.media.playercore.LibVLC">
+			<method name="play" alias="play"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="stop" alias="stop"></method>
+			<method name="getPlayerState" alias="getPlayerState"></method>
+			<method name="getPosition" alias="getPosition"></method>
+		</className>
+	</package>
+
+	<package name="com.panda.videoliveplatform">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="air.fyzb3">
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+			<method name="release" alias="release">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="air.tv.douyu.android">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.xunlei.downloadprovider">
+		<className name="com.aplayer.aplayerandroid.APlayerAndroid">
+			<method name="native_play" alias="native_play">
+				<param>int</param>
+			</method>
+			<method name="native_close" alias="native_close">
+				<param>int</param>
+			</method>
+			<method name="native_pause" alias="native_pause">
+				<param>int</param>
+			</method>
+			<method name="postEventFromNative" alias="postEventFromNative">
+				<param>Object</param>
+				<param>int</param>
+				<param>int</param>
+				<param>int</param>
+				<param>Object</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.telecom.video">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+			<method name="release" alias="release">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.ss.android.article.news">
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="stop" alias="stop"></method>
+			<method name="release" alias="release"></method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.example.androidtest">
+		<className name="android.view.ViewGroup">
+			<method name="dispatchTouchEvent" alias="dispatchTouchEvent">
+				<param>MotionEvent</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.sankuai.movie">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+
+		<className name="com.sankuai.movie.player.views.ExoControlView$ComponentListener">
+			<method name="onPlayerStateChanged">
+				<param>boolean</param>
+				<param>int</param>
+			</method>
+			<method name="onRenderedFirstFrame">
+			</method>
+			<method name="onVideoSizeChanged">
+				<param>int</param>
+				<param>int</param>
+				<param>int</param>
+				<param>float</param>
+			</method>
+		</className>
+		<className name="com.sankuai.movie.player.views.ExoControlView">
+			<method name="requestPlayPauseFocus"></method>
+			<method name="next"></method>
+		</className>
+
+		<className name="com.sankuai.movie.main.b.h">
+			<method name="onPlayerStateChanged">
+				<param>boolean</param>
+				<param>int</param>
+			</method>
+
+			<method name="onLoadingChanged">
+				<param name="onLoadingChanged">boolean</param>
+			</method>
+		</className>
+
+		<className name="com.sankuai.movie.movie.video.VideoPlayActivity">
+			<method name="requestPlayNext">
+				<param>boolean</param>
+			</method>
+			<method name="requestVideoPlayViewState">
+				<param>int</param>
+			</method>
+			<method name="r">
+			</method>
+		</className>
+		<className name="com.sankuai.movie.base.h">
+			<method name="a">
+				<param>int</param>
+			</method>
+		</className>
+
+	</package>
+
+	<package name="tv.danmaku.bili">
+
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+			<method name="release" alias="release">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+
+	<package name="com.lesports.glivesports">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+			<method name="release" alias="release">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+
+	<package name="com.telecom.video.ikan4g">
+
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+			<method name="release" alias="release">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.erdo.android.FJDXCartoon">
+
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+
+		<className name="com.google.android.exoplayer.ExoPlayerImpl">
+			<method name="getBufferedPosition" alias="getBufferedPosition"></method>
+			<method name="stop" alias="stop"></method>
+			<method name="release" alias="release"></method>
+			<method name="getCurrentPosition" alias="getCurrentPosition"></method>
+		</className>
+
+	</package>
+
+	<package name="com.hisunflytone.android">
+
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+
+		<className name="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+			<method name="start" alias="start">
+			</method>
+			<method name="pause" alias="pause">
+			</method>
+			<method name="stop" alias="stop">
+			</method>
+			<method name="release" alias="release">
+			</method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="cn.icartoons.childmind">
+		<className name="com.google.android.exoplayer.ExoPlayerImpl">
+			<method name="getBufferedPosition" alias="getBufferedPosition"></method>
+			<method name="stop" alias="stop"></method>
+			<method name="release" alias="release"></method>
+			<method name="getCurrentPosition" alias="getCurrentPosition"></method>
+		</className>
+	</package>
+
+
+	<package name="com.duoduo.child.story">
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+		<className name="com.youku.uplayer.UMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="postEventFromNative" alias="postEventFromNative">
+				<param>Object</param>
+				<param>int</param>
+				<param>int</param>
+				<param>int</param>
+				<param>Object</param>
+			</method>
+		</className>
+		<className name="com.youku.uplayer.AliMediaPlayer">
+			<method name="start" alias="alias"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="release" alias="release"></method>
+			<method name="postEventFromNative" alias="postEventFromNative">
+				<param>Object</param>
+				<param>int</param>
+				<param>int</param>
+				<param>int</param>
+				<param>Object</param>
+			</method>
+		</className>
+	</package>
+
+	<package name="com.slanissue.apps.mobile.erge">
+
+		<className name="android.app.Application">
+			<method name="attach" alias="attach">
+				<param>Context</param>
+			</method>
+		</className>
+
+		<className name="com.tencent.rtmp.player.TXFFPlayer">
+
+			<method name="native_release" alias="release"></method>
+
+			<method name="postEventFromNative" alias="postEventFromNative">
+				<param>Object</param>
+				<param>int</param>
+				<param>int</param>
+				<param>int</param>
+				<param>Object</param>
+			</method>
+
+		</className>
+
+	</package>
+
+	<package name="com.ss.android.article.lite">
+		<className name="com.ss.ttm.player.TTMediaPlayer">
+			<method name="start" alias="start"></method>
+			<method name="pause" alias="pause"></method>
+			<method name="stop" alias="stop"></method>
+			<method name="release" alias="release"></method>
+		</className>
+		<className name="tv.danmaku.ijk.media.player.AbstractMediaPlayer">
+			<method name="notifyOnInfo" alias="notifyOnInfo">
+				<param>int</param>
+				<param>int</param>
+			</method>
+		</className>
+	</package>
+</packages>

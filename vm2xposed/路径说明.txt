@@ -1,0 +1,16 @@
+BasicEngine  COMMONEngine  引擎路径
+/data/local/tmp/c/engine
+
+xposedvmconfig.xml 路径
+导入   /data/local/tmp
+cp到   /data/data/com.autosense/files
+导入完成后务必记得赋权   chmod 777 xposedvmconfig.xml    
+
+setting.cfg 路径
+导入   /data/local/tmp
+cp到   /data/data/com.autosense/files/cfg
+
+tcpdump 路径
+导入   /data/local/tmp
+cp到   /data/data/com.autosense/files/ser
+导入完成后务必记得赋权   chmod 777 tcpdump
