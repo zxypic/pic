@@ -1,3 +1,4 @@
+均基于 python3 实现
 
 - py_hezi_alarm:
 # 处理盒子频繁被系统回收，但不能解决autosense被频繁回收，只能缓解这个问题 
