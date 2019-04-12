@@ -2,8 +2,8 @@
 import rumps
 import urllib
 import json,sys
-reload(sys)
-sys.setdefaultencoding( "utf-8" )
+# reload(sys)
+# sys.setdefaultencoding( "utf-8" )
 
 class AutosenseIOSApp(rumps.App):
 

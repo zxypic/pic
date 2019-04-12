@@ -28,9 +28,9 @@ position = (100,100)
 draw = ImageDraw.Draw(im)
 draw.text(position, u'strname 你说啥a', font=font, fill=fillColor)
 
-# 绘制出来
+# 将文件临时保存，并允许绘制显示出来
 # img_OpenCV = cv2.cvtColor(np.asarray(im),cv2.COLOR_RGB2BGR) #PIL读取图片和OpenCV读取rgb图片的三个通道顺序不同
 # cv2.imshow("print chinese to image",img_OpenCV)
 # cv2.waitKey()
-# 保存
+# 保存磁盘
 im.save("/Users/xnder/Desktop/yuantu_cv.png", 'png')
