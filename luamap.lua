@@ -3,6 +3,12 @@
 luamap = {}
 luamap._VERSION = '1.0.1_0702pm14'	
 
+-- local mt = { __index = luamap }
+-- function luamap.new(self, width, height)
+--     return setmetatable({ width=width, height=height }, mt)
+-- end
+-- package.loaded["square"] = nil	热更新核心
+
 local srcpath = debug.getinfo(1).short_src:match("^.*/")
 local logfile = string.format("%sluamap.log", srcpath)
 
@@ -241,6 +247,19 @@ function luamap._readDumpFile(xpathFile)		--解析dump文件
 		luamap._writeFile(logfile, "dump file read false!" .. #file)
 	end
 	return file
+end
+function luamap._md5(md5file)		--取md5
+	local function sumhexa(k)
+		k = md5.sum(k)
+		return(string.gsub(k, ".", function(c)
+			return string.format("%02x", string.byte(c))
+		end))
+	end
+	local inp = assert(io.open(md5file, "rb"))
+	local data = inp:read("*all")
+	local nret = sumhexa(data);
+	assert(inp:close())
+	return nret
 end
 --###################################### 功能扩展函数 #############################################
 --###################################### 可能没啥用 #############################################

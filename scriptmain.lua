@@ -160,11 +160,11 @@ local function GetUUVersion()
 	local installTime = _cfunc.Command(string.format("dumpsys package com.autosense |grep '%s'", "firstInstallTime"))
 	local userId = _cfunc.Command(string.format("dumpsys package com.autosense |grep '%s'", "userId"))
 	local uptime = _cfunc.Command(string.format("uptime"))
-	version = version:match("=(.*)"):gsub("\n", "")
-	installTime = installTime:match("=(.*)"):gsub("\n", "")
+	version = version:match("=(.*)") or "nil"
+	installTime = installTime:match("=(.*)") and installTime:match("=(.*)"):gsub("\n", "") or "nil"
 	userId = userId:gsub("\n", ""):gsub("    ", "")
 	uptime = string.gsub(uptime, "\n", "")
-	debugMsg(string.format("[AutoSense] version: %s  installtime: %s", version, installTime))
+	debugMsg(string.format("[AutoSense] version: %s  installtime: %s", version:gsub("\n", ""), installTime))
 	debugMsg(string.format(" %s", uptime))
 	debugMsg(string.format(" %s", userId))
 	
@@ -179,7 +179,7 @@ local function Dumper_Init()
 	os.execute(string.format("rm -r %s", "/sdcard/AutoManager/"))
 	_cfunc.CreateDir(dumppath) 	--处理权限问题
 	local xpathFile, Version = API_UIdumper(timeout)
-	debugMsg(string.format("%s", Version))
+	debugMsg(string.format("%s", Version or "nil"))
 	debugMsg(string.format("xdumpFile: %s", xpathFile))     --'/data/local/tmp/uubootstrap/dump/dump.xml'
 end
 --*****************************************************************************************************************--
@@ -599,7 +599,7 @@ local function toContentResult(ret, rsttable, titles, valuestr, vocfile)
 	local m_Edition = rettable.Edition or "1.0.0"
 	local m_Stime = rettable.stime or os.date("%Y%m%d%H%M%S")
 	local m_Etime = rettable.etime or os.date("%Y%m%d%H%M%S")
-	local m_Title = titles or rettable.title or "error"
+	local m_Title = titles or rettable.title or "TitleError"
 	local m_Ret
 	if ret then
 		m_Ret = ret == 0 and "00" or "03"
@@ -610,6 +610,7 @@ local function toContentResult(ret, rsttable, titles, valuestr, vocfile)
 	end
 	local m_Vtype = rettable.vtype or "1" --默认类型
 	local mp_value = m_Ret == "00" and "1" or "0"	--成功 为1
+	rettable.values = rettable.taskId and string.format("%s|%s",rettable.values,rettable.taskId) or rettable.values 
 	local m_Value = rettable.values or valuestr or mp_value
 	local m_Net = rettable.net or "Lan"
 	
